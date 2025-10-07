@@ -1,8 +1,3 @@
-Here’s a **complete and polished `README.md`** you can copy-paste directly into your project.
-It’s structured cleanly, uses Markdown formatting properly, and looks great on GitHub 👇
-
----
-
 # ✒️ **Sentient Pen: AI-Powered Sentiment-Aligned Text Generator**
 
 Sentient Pen is a smart writing assistant that analyzes the **sentiment of your text** and generates a new paragraph that matches that emotional tone.
@@ -43,8 +38,8 @@ Follow these steps to run the app locally:
 ### 1. **Clone the Repository**
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-cd YOUR_REPOSITORY
+git clone https://github.com/kratagya99/Sentient-Pen.git
+cd Sentient-Pen
 ```
 
 ---
@@ -105,7 +100,7 @@ If not, go to 👉 [http://localhost:8501](http://localhost:8501)
 ## 📂 **Project Structure**
 
 ```
-├── venv/                 # Virtual environment (not pushed to Git)
+├── venv                  # Virtual environment (not pushed to Git)
 ├── app.py                # Main Streamlit application
 ├── requirements.txt      # Dependencies
 └── README.md             # Project documentation
@@ -126,26 +121,15 @@ If you'd like to improve Sentient Pen:
 
 ---
 
-## 📄 **License**
-
-This project is licensed under the **MIT License**.
-You are free to use, modify, and distribute it under the terms of the license.
-
----
-
 ## ✍️ **Author**
 
 **Your Name**
 
-* GitHub: [@yourusername](https://github.com/yourusername)
-* LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourusername)
+* GitHub: [@Kratagya99](https://github.com/kratagya99)
+* LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/kratagya-shrivastava-6947b3267/)
 
 ---
 
 ## ⭐ **Support**
 
 If you found this project useful, consider giving it a **⭐ on GitHub** — it really helps boost visibility and encourages further development!
-
----
-
-Would you like me to also add **badges** (e.g., Python version, Streamlit, license, Hugging Face) at the top for a more professional GitHub look?
