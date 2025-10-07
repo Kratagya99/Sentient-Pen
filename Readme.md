@@ -1,68 +1,151 @@
-✒️ Sentient Pen: AI-Powered Sentiment-Aligned Text Generator
-Sentient Pen is a smart writing assistant that analyzes the sentiment of your text and generates a new paragraph that aligns with that specific emotional tone. Whether you need an optimistic, critical, or neutral continuation of your thoughts, this tool helps you craft text with the right feel.
+Here’s a **complete and polished `README.md`** you can copy-paste directly into your project.
+It’s structured cleanly, uses Markdown formatting properly, and looks great on GitHub 👇
 
-✨ Key Features
-Automatic Sentiment Detection: Instantly analyzes your input prompt to determine if the sentiment is positive, neutral, or negative using a state-of-the-art NLP model.
+---
 
-Sentiment-Aligned Generation: Generates a coherent paragraph that continues your thought, carefully matching the detected (or manually chosen) sentiment.
+# ✒️ **Sentient Pen: AI-Powered Sentiment-Aligned Text Generator**
 
-Manual Override: Don't agree with the AI's sentiment detection? Manually select the sentiment you want the generated text to have.
+Sentient Pen is a smart writing assistant that analyzes the **sentiment of your text** and generates a new paragraph that matches that emotional tone.
+Whether you want an **optimistic**, **neutral**, or **critical** continuation, this tool uses powerful NLP models to craft text that aligns with the sentiment.
 
-Customizable Generation: Fine-tune the creative output with adjustable settings for text length, temperature (creativity), and top-p sampling.
+---
 
-Generation History: Keeps a running history of your recent prompts and the text generated from them.
+## ✨ **Key Features**
 
-🚀 How It Works
-The application uses a two-stage pipeline powered by models from the Hugging Face Hub:
+* 🧠 **Automatic Sentiment Detection** – Instantly classifies your prompt as *positive*, *neutral*, or *negative* using a state-of-the-art model.
+* 📝 **Sentiment-Aligned Generation** – Generates coherent paragraphs that match the detected or selected sentiment.
+* 🎛️ **Manual Sentiment Override** – Don’t agree with the detection? Choose your preferred sentiment manually.
+* ⚙️ **Customizable Settings** – Control text length, creativity (temperature), and nucleus sampling.
+* 🕓 **Generation History** – Keeps a list of your recent prompts and their generated outputs.
+* ⚡ **Fast & Lightweight** – Runs locally with minimal setup. GPU acceleration is supported if available.
 
-Sentiment Analysis: The initial prompt is first processed by cardiffnlp/twitter-roberta-base-sentiment, a powerful model fine-tuned for sentiment classification.
+---
 
-Text Generation: A new, more detailed prompt is constructed that instructs the generation model, google/flan-t5-base, to write a paragraph in a tone that matches the desired sentiment. The application includes a retry mechanism that adjusts the temperature to ensure the generated text meets the sentiment criteria.
+## 🚀 **How It Works**
 
-🛠️ Setup and Installation
-To run this project locally, follow these steps:
+The app runs a **two-stage pipeline**:
 
-1. Clone the repository:
+1. **Sentiment Analysis**
+   Your input is analyzed using
+   `cardiffnlp/twitter-roberta-base-sentiment`
+   to determine its emotional tone (positive, neutral, or negative).
 
-git clone [https://github.com/YOUR_USERNAME/sentient-pen.git](https://github.com/YOUR_USERNAME/sentient-pen.git)
-cd sentient-pen
+2. **Sentiment-Aligned Text Generation**
+   A tailored instruction prompt is built, and `google/flan-t5-base` generates a paragraph that reflects the chosen sentiment.
+   If the output doesn't match the required tone, the app retries with adjusted creativity settings to maintain quality.
 
-2. Create a virtual environment:
-It's recommended to use a virtual environment to keep dependencies isolated.
+---
 
-# For Windows
+## 🛠️ **Setup and Installation**
+
+Follow these steps to run the app locally:
+
+### 1. **Clone the Repository**
+
+```bash
+git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
+cd YOUR_REPOSITORY
+```
+
+---
+
+### 2. **Create a Virtual Environment**
+
+It's strongly recommended to use a virtual environment to isolate dependencies.
+
+```bash
+# Windows
 python -m venv venv
 venv\Scripts\activate
 
-# For macOS/Linux
+# macOS / Linux
 python3 -m venv venv
 source venv/bin/activate
+```
 
-3. Install the required libraries:
-The requirements.txt file contains all the necessary packages.
+---
 
+### 3. **Install the Required Dependencies**
+
+Install all necessary packages using `requirements.txt`:
+
+```bash
 pip install -r requirements.txt
+```
 
-(Note: If you have a CUDA-enabled GPU, installing the correct version of PyTorch can significantly speed up the models. The app will default to CPU if no GPU is found.)
+> 💡 *If you have a CUDA-enabled GPU, installing the correct version of PyTorch will speed up the model significantly. The app automatically falls back to CPU if no GPU is detected.*
 
-▶️ How to Run the App
-Once you have completed the setup, you can run the Streamlit application with the following command:
+---
 
-streamlit run sentiment_app.py
+## ▶️ **Run the Application**
 
-The application will open in a new tab in your default web browser.
+Once setup is complete, start the Streamlit app:
 
-💻 Technology Stack
-Language: Python 3.9+
+```bash
+streamlit run app.py
+```
 
-Framework: Streamlit
+The app will automatically open in your browser.
+If not, go to 👉 [http://localhost:8501](http://localhost:8501)
 
-Machine Learning: PyTorch, Hugging Face Transformers
+---
 
-Models:
+## 💻 **Technology Stack**
 
-cardiffnlp/twitter-roberta-base-sentiment
+* **Language:** Python 3.9+
+* **Framework:** Streamlit
+* **Machine Learning:** PyTorch, Hugging Face Transformers
+* **Models:**
 
-google/flan-t5-base
+  * `cardiffnlp/twitter-roberta-base-sentiment` – Sentiment Analysis
+  * `google/flan-t5-base` – Text Generation
 
-This project was created as a demonstration of how modern NLP models can be combined to create powerful and intuitive applications.
+---
+
+## 📂 **Project Structure**
+
+```
+├── venv/                 # Virtual environment (not pushed to Git)
+├── app.py                # Main Streamlit application
+├── requirements.txt      # Dependencies
+└── README.md             # Project documentation
+```
+
+---
+
+## 🤝 **Contributing**
+
+Contributions are welcome!
+If you'd like to improve Sentient Pen:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Commit your changes (`git commit -m "Add new feature"`)
+4. Push your branch (`git push origin feature-branch`)
+5. Create a Pull Request
+
+---
+
+## 📄 **License**
+
+This project is licensed under the **MIT License**.
+You are free to use, modify, and distribute it under the terms of the license.
+
+---
+
+## ✍️ **Author**
+
+**Your Name**
+
+* GitHub: [@yourusername](https://github.com/yourusername)
+* LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/yourusername)
+
+---
+
+## ⭐ **Support**
+
+If you found this project useful, consider giving it a **⭐ on GitHub** — it really helps boost visibility and encourages further development!
+
+---
+
+Would you like me to also add **badges** (e.g., Python version, Streamlit, license, Hugging Face) at the top for a more professional GitHub look?
