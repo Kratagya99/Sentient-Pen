@@ -126,7 +126,7 @@ If you'd like to improve Sentient Pen:
 **Kratagya Shrivastava**
 
 * GitHub: [@Kratagya99](https://github.com/kratagya99)
-* LinkedIn: [Your LinkedIn](https://www.linkedin.com/in/kratagya-shrivastava-6947b3267/)
+* LinkedIn: [Kratagya Shrivastava](https://www.linkedin.com/in/kratagya-shrivastava-6947b3267/)
 
 ---
 
